@@ -1,5 +1,7 @@
-const Home = () => {
-  return <div>home page</div>
+import { FC } from 'react'
+
+const Home: FC = () => {
+  return <div>主页</div>
 }
 
 export default Home
