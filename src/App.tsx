@@ -1,14 +1,21 @@
-import { Button } from 'antd'
-import Router from './router'
-import { Link } from '@/components'
+import routes from '@/routes/routes'
+import { useRoutes } from 'react-router-dom'
+import Header from './components/Header/Header'
+import Nav from './components/Nav/Nav'
+import './index.css'
 
 function App() {
+  const element = useRoutes(routes)
+
   return (
-    <div className="App">
-      <Link to="/">Home Page</Link>
-      <Link to="/about">About Page</Link>
-      <Button type="primary">按钮</Button>
-      <Router />
+    <div>
+      <div>
+        <Header />
+      </div>
+      <div>
+        <Nav />
+      </div>
+      {element}
     </div>
   )
 }
