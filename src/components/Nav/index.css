@@ -1,0 +1,24 @@
+.navTag {
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.navTag:hover {
+    color: #000;
+    background-color: white;
+}
+
+.subTag {
+    background-color: #343538;
+    color: #fff;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    white-space: nowrap;
+}
