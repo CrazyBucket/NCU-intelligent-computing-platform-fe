@@ -1,8 +1,11 @@
-import { FC } from 'react'
+import { FC, useEffect, useState } from 'react'
 import Logo from '@/assets/logo.png'
 import './index.css'
+import BtnNav from '../btnNav'
+import { useIsMobileStore } from '@/store/isMobile'
 
 const Header: FC = () => {
+  const { isMobile } = useIsMobileStore()
   return (
     <header
       style={{
@@ -11,12 +14,22 @@ const Header: FC = () => {
         display: 'flex',
         margin: '0 auto',
         alignItems: 'center',
+        justifyContent: 'space-between',
       }}
     >
-      <div style={{ flex: 1 }}>
-        <img src={Logo} />
+      {isMobile && (
+        <div>
+          <BtnNav />
+        </div>
+      )}
+      <div
+        style={{
+          flex: 1,
+          display: 'flex',
+        }}
+      >
+        <img src={Logo} height={60} />
       </div>
-      <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-end' }}></div>
     </header>
   )
 }
