@@ -1,12 +1,14 @@
 import { FC } from 'react'
-import './index.css'
+import { useNavigate } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import React from 'react'
+import './index.css'
 
 const Nav: FC = () => {
+  const navigate = useNavigate()
   const [hoverIndex, setHoverIndex] = React.useState<number | null>(null)
   const subTags = [
-    ['中心简介', '账号申请', '用户手册'],
+    [],
     ['超算中心简介', '中心资源', '规章制度'],
     ['账号申请', '文档与培训', '用户手册', '常见问题'],
     ['新闻发布', '科研项目合作'],
@@ -16,11 +18,12 @@ const Nav: FC = () => {
   return (
     <nav
       style={{
-        backgroundColor: '#343538',
+        backgroundColor: '#25406C',
         height: '60px',
         display: 'flex',
         justifyContent: 'center',
         color: '#fff',
+        userSelect: 'none',
       }}
     >
       <div
@@ -36,7 +39,6 @@ const Nav: FC = () => {
             <motion.div
               key={index}
               className="navTag"
-              // 当鼠标悬停时，设置hoverIndex为当前索引，当鼠标离开时，设置hoverIndex为null
               onHoverStart={() => setHoverIndex(index)}
               onHoverEnd={() => setHoverIndex(null)}
               style={{ position: 'relative' }}

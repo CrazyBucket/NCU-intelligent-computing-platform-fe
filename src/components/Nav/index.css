@@ -14,11 +14,16 @@
 }
 
 .subTag {
-    background-color: #343538;
+    background-color: #25406c;
     color: #fff;
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 18px;
     padding-bottom: 18px;
     white-space: nowrap;
+}
+.subTag:hover {
+    background-color: #fff;
+    color: #000;
+
 }
