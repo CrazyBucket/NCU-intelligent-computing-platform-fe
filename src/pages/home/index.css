@@ -11,7 +11,8 @@
 }
 
 .item {
-    object-fit: contain;
+    min-height: 400px;
+        object-fit: cover;
 }
 
 .swiper-button-prev,

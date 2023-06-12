@@ -18,7 +18,7 @@ const Nav: FC = () => {
   return (
     <nav
       style={{
-        backgroundColor: '#25406C',
+        backgroundColor: '#272F42',
         height: '60px',
         display: 'flex',
         justifyContent: 'center',
