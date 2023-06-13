@@ -7,9 +7,17 @@ import './index.css'
 const Nav: FC = () => {
   const navigate = useNavigate()
   const [hoverIndex, setHoverIndex] = React.useState<number | null>(null)
+  const tagRoute = ['/', '/centerOverview', '/onBoard', '/news', '/contactUs']
+  const subTagRoute = [
+    [],
+    ['/centerOverview/introduction', '/centerOverview/resource', '/centerOverview/rules'],
+    ['/onBoard/applyAccount', '/onBoard/doc', '/onBoard/userManual', '/onBoard/problem'],
+    ['/news/release', '/news/cooperate'],
+    ['/contactUs/VPN', '/contactUs/install', '/contactUs/manage'],
+  ]
   const subTags = [
     [],
-    ['超算中心简介', '中心资源', '规章制度'],
+    ['智算平台简介', '中心资源', '规章制度'],
     ['账号申请', '文档与培训', '用户手册', '常见问题'],
     ['新闻发布', '科研项目合作'],
     ['校外用户申请开通超算中心VPN', '软件安装协助', '智算中心管理'],
@@ -38,12 +46,18 @@ const Nav: FC = () => {
           {['主页', '中心概况', '上机服务', '新闻公告', '联系我们'].map((tag, index) => (
             <motion.div
               key={index}
-              className="navTag"
               onHoverStart={() => setHoverIndex(index)}
               onHoverEnd={() => setHoverIndex(null)}
               style={{ position: 'relative' }}
             >
-              {tag}
+              <div
+                className="navTag"
+                onClick={() => {
+                  navigate(tagRoute[index])
+                }}
+              >
+                {tag}
+              </div>
               <AnimatePresence initial={false}>
                 {hoverIndex === index && (
                   <motion.div
@@ -63,7 +77,7 @@ const Nav: FC = () => {
                       zIndex: 1,
                     }}
                   >
-                    {subTags[index].map(subTag => (
+                    {subTags[index].map((subTag, i) => (
                       <motion.div
                         key={subTag}
                         className="subTag"
@@ -72,6 +86,9 @@ const Nav: FC = () => {
                           open: { scale: 1, opacity: 1 },
                         }}
                         transition={{ duration: 0.3 }}
+                        onClick={() => {
+                          navigate(subTagRoute[index][i])
+                        }}
                       >
                         {subTag}
                       </motion.div>
