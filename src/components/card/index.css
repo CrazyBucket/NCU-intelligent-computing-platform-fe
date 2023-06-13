@@ -1,0 +1,50 @@
+.card {
+    margin-top: 70px;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: #fff;
+    width: 260px;
+    height: 180px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card:hover {
+    transition: box-shadow 0.3s ease-in-out;
+    box-shadow: 0px 67px 186px rgba(0, 0, 0, 0.11), 0px 7.29524px 56.6046px rgba(0, 0, 0, 0.055);
+}
+
+.cardIcon {
+
+    padding-left: 20px;
+    padding-right: 15px;
+}
+
+.cardTitle {
+    font-family: 'PingFang SC';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+
+.cardSubTitle {
+    width: 160px;
+    font-family: 'PingFang SC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #5E5E5E;
+}
+
+.cardContent {
+    padding-right: 15px;
+}
