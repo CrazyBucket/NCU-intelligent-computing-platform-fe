@@ -2,8 +2,10 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'PingFang SC';
-    line-height: 1.5;
+  line-height: 1.5;
   background-color: #eff1f2;
+  min-height: 100vh;
+    position: relative;
 }
 
 a {
