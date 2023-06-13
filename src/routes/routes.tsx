@@ -13,8 +13,10 @@ import Doc from '@/pages/onBoard/doc/doc'
 import Problem from '@/pages/onBoard/problem/problem'
 import UserManual from '@/pages/onBoard/userManual/userManual'
 import Home from '@/pages/home'
-import { Navigate } from 'react-router-dom'
 import NotFound from '@/pages/notFound'
+import { Navigate } from 'react-router-dom'
+import VPN from '@/pages/contactUs/VPN/VPN'
+import Manage from '@/pages/contactUs/manage/manage'
 
 //创建路由表
 const routes = [
@@ -45,6 +47,14 @@ const routes = [
   {
     path: '/contactUs/install',
     element: <Install />,
+  },
+  {
+    path: '/contactUs/VPN',
+    element: <VPN />,
+  },
+  {
+    path: '/contactUs/manage',
+    element: <Manage />,
   },
   {
     path: '/news',
