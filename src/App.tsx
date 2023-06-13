@@ -5,6 +5,7 @@ import Header from './components/Header/Header'
 import Nav from './components/Nav/Nav'
 import { useIsMobileStore } from './store/isMobile'
 import './index.css'
+import Footer from './components/footer/footer'
 
 function App() {
   const element = useRoutes(routes)
@@ -30,6 +31,7 @@ function App() {
         </div>
       )}
       {element}
+      <Footer />
     </div>
   )
 }
