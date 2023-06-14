@@ -9,12 +9,11 @@ body {
 }
 
 a {
-  color: #007bff;
   text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 p {
@@ -22,6 +21,9 @@ p {
   margin-bottom: 1rem;
 }
 
+p {
+  text-indent: 20px;
+}
 img {
   display: block;
   max-width: 100%;

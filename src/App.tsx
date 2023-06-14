@@ -4,8 +4,8 @@ import { useRoutes } from 'react-router-dom'
 import Header from './components/Header/Header'
 import Nav from './components/Nav/Nav'
 import { useIsMobileStore } from './store/isMobile'
-import './index.css'
 import Footer from './components/footer/footer'
+import './index.css'
 
 function App() {
   const element = useRoutes(routes)
@@ -30,7 +30,14 @@ function App() {
           <Nav />
         </div>
       )}
-      {element}
+      <div
+        style={{
+          maxWidth: '1080px',
+          margin: '0 auto',
+        }}
+      >
+        {element}
+      </div>
       <Footer />
     </div>
   )

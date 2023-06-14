@@ -12,7 +12,7 @@
 
 .item {
     min-height: 400px;
-        object-fit: cover;
+    object-fit: cover;
 }
 
 .swiper-button-prev,
@@ -26,11 +26,11 @@
     justify-content: center;
     background: #000;
 }
+
 .cardGroup {
     max-width: 1080px;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
     margin: 0 auto;
 }
