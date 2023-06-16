@@ -5,15 +5,11 @@ const Footer: FC = () => {
     <div
       style={{
         height: '40px',
-        position: 'absolute',
-        bottom: 0,
-        left: 0,
-        right: 0,
+        lineHeight: '40px',
+        width: '100%',
         backgroundColor: '#2F3033',
         color: '#fff',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
+        textAlign: 'center',
         fontWeight: 'lighter',
       }}
     >
