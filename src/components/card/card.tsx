@@ -22,7 +22,7 @@ const Card: FC<CardProps> = ({ icon, title, subTitle, navigateTo }) => {
       <img src={icon} alt="icon" className="cardIcon" />
       <div className="cardContent">
         <div className="cardTitle">
-          <div style={{ maxWidth: '120px' }}>{title}</div>
+          <div style={{ maxWidth: '130px' }}>{title}</div>
           <img src={Vocter} />
         </div>
         <div className="cardSubTitle">{subTitle}</div>
