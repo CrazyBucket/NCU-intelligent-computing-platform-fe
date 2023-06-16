@@ -41,7 +41,7 @@ const Home: FC = () => {
           icon={intro}
           title="智算平台简介"
           subTitle="南昌大学智算平台，为用户提供超算服务"
-          navigateTo="/centerOverview/introduction"
+          navigateTo="/Overview/introduction"
         />
         <Card
           icon={person}
