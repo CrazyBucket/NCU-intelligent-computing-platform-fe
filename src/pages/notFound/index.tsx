@@ -1,5 +1,4 @@
 import { FC } from 'react'
-import notFound from '@/assets/404.svg'
 
 const NotFound: FC = () => {
   return (
@@ -8,10 +7,14 @@ const NotFound: FC = () => {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        marginTop: '80px',
+        marginTop: '180px',
+        flexDirection: 'column',
+        color: '#272f42',
+        fontWeight: '700',
       }}
     >
-      <img src={notFound} alt="" />
+      <span style={{ fontSize: '24px' }}>404 NotFound</span>
+      <span style={{ fontSize: '36px' }}>该页面不存在</span>
     </div>
   )
 }
