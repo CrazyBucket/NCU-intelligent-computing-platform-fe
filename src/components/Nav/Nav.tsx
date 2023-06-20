@@ -35,7 +35,7 @@ const Nav: FC = () => {
     <nav
       style={{
         backgroundColor: '#272F42',
-        height: '60px',
+        lineHeight: '60px',
         display: 'flex',
         justifyContent: 'center',
         color: '#fff',
@@ -48,6 +48,7 @@ const Nav: FC = () => {
           display: 'flex',
           justifyContent: 'space-between',
           width: '100%',
+          flexWrap: 'wrap',
         }}
       >
         <div style={{ display: 'flex', alignItems: 'center' }}>
