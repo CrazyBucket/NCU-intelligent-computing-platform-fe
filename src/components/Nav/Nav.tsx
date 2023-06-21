@@ -48,10 +48,9 @@ const Nav: FC = () => {
           display: 'flex',
           justifyContent: 'space-between',
           width: '100%',
-          flexWrap: 'wrap',
         }}
       >
-        <div style={{ display: 'flex', alignItems: 'center' }}>
+        <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap' }}>
           {['主页', '平台概况', '上机服务', '新闻公告', '联系我们', '平台业务'].map(
             (tag, index) => (
               <motion.div
