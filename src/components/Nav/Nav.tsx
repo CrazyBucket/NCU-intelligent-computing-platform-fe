@@ -7,27 +7,21 @@ import './index.css'
 const Nav: FC = () => {
   const navigate = useNavigate()
   const [hoverIndex, setHoverIndex] = React.useState<number | null>(null)
-  const tagRoute = ['/', '/Overview', '/onBoard', '/news', '/contactUs', '/business']
+  const tagRoute = ['/', '/Overview', '/Serve', '/news', '/Login', '/business']
   const subTagRoute = [
     [],
-    ['/Overview/introduction', '/Overview/resource', '/Overview/rules'],
-    [
-      '/onBoard/applyAccount',
-      '/onBoard/doc',
-      '/onBoard/userManual',
-      '/onBoard/problem',
-      './onBoard/application',
-    ],
+    ['/Overview/introduction', '/Overview/resource', '/Overview/rules', '/Overview/ContactUs'],
+    ['/Serve/applyAccount', '/Serve/userManual', '/Serve/problem', '/Serve/application'],
     [],
-    ['/contactUs/VPN', '/contactUs/install', '/contactUs/manage'],
+    ['/Login/VPN', '/Login/help', '/Login/Approval'],
     ['./business/onCampus', './business/enterprise', './business/consult'],
   ]
   const subTags = [
     [],
     ['智算平台简介', '平台资源', '规章制度'],
-    ['账号申请', '文档与培训', '用户手册', '常见问题', '付费申请'],
+    ['账号申请', '用户手册', '常见问题', '付费申请'],
     [],
-    ['校外用户申请开通超算中心VPN', '软件安装协助', '智算平台管理'],
+    ['校外VPN登陆', '软件协助', '账号审批'],
     ['校内科研合作', '校企科研合作', '项目咨询与需求发布'],
   ]
 
@@ -51,7 +45,7 @@ const Nav: FC = () => {
         }}
       >
         <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap' }}>
-          {['主页', '平台概况', '上机服务', '新闻公告', '联系我们', '平台业务'].map(
+          {['主页', '平台概况', '中心服务', '新闻公告', '平台登陆', '平台业务'].map(
             (tag, index) => (
               <motion.div
                 key={index}

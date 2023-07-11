@@ -47,13 +47,13 @@ const Home: FC = () => {
           icon={person}
           title="账号申请"
           subTitle="点击进入申请账号详情页"
-          navigateTo="/onBoard/applyAccount"
+          navigateTo="/Serve/applyAccount"
         />
         <Card
           icon={book}
           title="用户手册"
           subTitle="点击查看用户手册"
-          navigateTo="/onBoard/userManual"
+          navigateTo="/Serve/userManual"
         />
       </div>
     </div>

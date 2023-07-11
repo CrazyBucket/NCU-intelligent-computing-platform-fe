@@ -20,12 +20,7 @@ const Overview: FC = () => {
         subTitle="南昌大学智算平台规章制度查看"
         navigateTo="/Overview/rules"
       />
-      <Card
-        icon={contact}
-        title="联系我们"
-        subTitle="点击查看我们的联系方式"
-        navigateTo="/contactUs"
-      />
+      <Card icon={contact} title="联系我们" subTitle="点击查看我们的联系方式" navigateTo="/Login" />
     </div>
   )
 }
