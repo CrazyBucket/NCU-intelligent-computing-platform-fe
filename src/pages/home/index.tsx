@@ -1,37 +1,63 @@
-import { FC } from 'react'
-import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper'
+import React, { FC, useEffect, useRef } from 'react'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import Card from '@/components/card/card'
 import book from '@/assets/book.svg'
 import intro from '@/assets/intro.svg'
 import person from '@/assets/person.svg'
-import home1 from '@/assets/home1.png'
-import home2 from '@/assets/home2.png'
-import 'swiper/swiper-bundle.css'
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
+import 'swiper/css/scrollbar'
 import './index.css'
 
-SwiperCore.use([Navigation, Pagination, Scrollbar, A11y])
-
 const Home: FC = () => {
+  const imagesRef = useRef<HTMLImageElement[]>([])
+
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger)
+
+    imagesRef.current.forEach(image => {
+      gsap.fromTo(
+        image,
+        { scale: 0, opacity: 0 },
+        {
+          scale: 1,
+          opacity: 1,
+          duration: 1,
+          scrollTrigger: {
+            trigger: image,
+            start: 'top bottom-=100',
+            end: '90% top',
+            scrub: true,
+          },
+        },
+      )
+    })
+  }, [])
+
   return (
     <div>
       <div className="swiper-container">
         <Swiper
           spaceBetween={0}
           slidesPerView={1}
-          navigation
           pagination={{ clickable: true }}
           loop={true}
-          autoplay={{ delay: 3000 }}
+          autoplay={{
+            delay: 3000,
+          }}
+          navigation={true}
         >
           <SwiperSlide>
             <div className="bgBox">
-              <img src={home1} className="item" />
+              <img src="/img/home3.jpg" className="item" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="bgBox">
-              <img src={home2} className="item" />
+              <img src="/img/home1.jpg" className="item" />
             </div>
           </SwiperSlide>
         </Swiper>
@@ -56,6 +82,23 @@ const Home: FC = () => {
           navigateTo="/Serve/userManual"
         />
       </div>
+
+      <img
+        ref={el => el && imagesRef.current.push(el)}
+        src="../../../public/img/home2.jpg"
+        alt=""
+      />
+
+      <img
+        ref={el => el && imagesRef.current.push(el)}
+        src="../../../public/img/home4.jpg"
+        alt=""
+      />
+      <img
+        ref={el => el && imagesRef.current.push(el)}
+        src="../../../public/img/home5.jpg"
+        alt=""
+      />
     </div>
   )
 }

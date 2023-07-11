@@ -9,9 +9,11 @@
   "dependencies": {
     "antd": "^4.24.10",
     "framer-motion": "^10.12.16",
+    "gsap": "^3.12.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.12.1",
+    "react-scrollama": "^2.3.2",
     "swiper": "^9.3.2",
     "vite": "^3.2.7",
     "zustand": "^4.3.8"

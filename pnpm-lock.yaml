@@ -11,10 +11,12 @@ specifiers:
   antd: ^4.24.10
   eslint: ^8.42.0
   framer-motion: ^10.12.16
+  gsap: ^3.12.2
   prettier: ^2.8.8
   react: ^18.2.0
   react-dom: ^18.2.0
   react-router-dom: ^6.12.1
+  react-scrollama: ^2.3.2
   swiper: ^9.3.2
   typescript: ^4.9.5
   vite: ^3.2.7
@@ -24,9 +26,11 @@ specifiers:
 dependencies:
   antd: registry.npmmirror.com/antd/4.24.10_react-dom@18.2.0+react@18.2.0
   framer-motion: registry.npmmirror.com/framer-motion/10.12.16_react-dom@18.2.0+react@18.2.0
+  gsap: registry.npmmirror.com/gsap/3.12.2
   react: registry.npmmirror.com/react/18.2.0
   react-dom: registry.npmmirror.com/react-dom/18.2.0_react@18.2.0
   react-router-dom: registry.npmmirror.com/react-router-dom/6.12.1_react-dom@18.2.0+react@18.2.0
+  react-scrollama: registry.npmmirror.com/react-scrollama/2.3.2_react-dom@18.2.0+react@18.2.0
   swiper: registry.npmmirror.com/swiper/9.3.2
   vite: registry.npmmirror.com/vite/3.2.7_@types+node@20.2.5
   zustand: registry.npmmirror.com/zustand/4.3.8_react@18.2.0
@@ -1872,6 +1876,12 @@ packages:
     version: 1.4.0
     dev: true
 
+  registry.npmmirror.com/gsap/3.12.2:
+    resolution: {integrity: sha512-EkYnpG8qHgYBFAwsgsGEqvT1WUidX0tt/ijepx7z8EUJHElykg91RvW1XbkT59T0gZzzszOpjQv7SE41XuIXyQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/gsap/-/gsap-3.12.2.tgz}
+    name: gsap
+    version: 3.12.2
+    dev: false
+
   registry.npmmirror.com/has-flag/3.0.0:
     resolution: {integrity: sha512-sKJf1+ceQBr4SMkvQnBDNDtf4TXpVhVGateu0t918bl30FnbE2m4vNLX+VWe/dpjlb+HugGYzW7uQXH98HPEYw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/has-flag/-/has-flag-3.0.0.tgz}
     name: has-flag
@@ -2963,6 +2973,17 @@ packages:
       scheduler: registry.npmmirror.com/scheduler/0.23.0
     dev: false
 
+  registry.npmmirror.com/react-intersection-observer/9.5.2_react@18.2.0:
+    resolution: {integrity: sha512-EmoV66/yvksJcGa1rdW0nDNc4I1RifDWkT50gXSFnPLYQ4xUptuDD4V7k+Rj1OgVAlww628KLGcxPXFlOkkU/Q==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/react-intersection-observer/-/react-intersection-observer-9.5.2.tgz}
+    id: registry.npmmirror.com/react-intersection-observer/9.5.2
+    name: react-intersection-observer
+    version: 9.5.2
+    peerDependencies:
+      react: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: registry.npmmirror.com/react/18.2.0
+    dev: false
+
   registry.npmmirror.com/react-is/16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/react-is/-/react-is-16.13.1.tgz}
     name: react-is
@@ -3003,6 +3024,21 @@ packages:
     dependencies:
       '@remix-run/router': registry.npmmirror.com/@remix-run/router/1.6.3
       react: registry.npmmirror.com/react/18.2.0
+    dev: false
+
+  registry.npmmirror.com/react-scrollama/2.3.2_react-dom@18.2.0+react@18.2.0:
+    resolution: {integrity: sha512-gJo+sO09Xp069taAMzWRsg/WuMWyNqRCQnw+PIyjBBkxWH4ImEZIC4z1nwwJy1eQ0oqHauEqYlrAlDClH6pzdA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/react-scrollama/-/react-scrollama-2.3.2.tgz}
+    id: registry.npmmirror.com/react-scrollama/2.3.2
+    name: react-scrollama
+    version: 2.3.2
+    engines: {node: '>=8', npm: '>=5'}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.2 || ^18.2.0
+      react-dom: ^16.8.0 || ^17.0.2 || ^18.2.0
+    dependencies:
+      react: registry.npmmirror.com/react/18.2.0
+      react-dom: registry.npmmirror.com/react-dom/18.2.0_react@18.2.0
+      react-intersection-observer: registry.npmmirror.com/react-intersection-observer/9.5.2_react@18.2.0
     dev: false
 
   registry.npmmirror.com/react/18.2.0:

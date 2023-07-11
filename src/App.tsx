@@ -1,5 +1,6 @@
 import routes from '@/routes/routes'
-import { useRoutes } from 'react-router-dom'
+import { useRoutes, useLocation } from 'react-router-dom'
+import SwiperCore, { Autoplay } from 'swiper'
 import Header from './components/Header/Header'
 import Nav from './components/Nav/Nav'
 import Footer from './components/footer/footer'
@@ -7,7 +8,9 @@ import './index.css'
 
 function App() {
   const element = useRoutes(routes)
-
+  const location = useLocation()
+  const isHome = location.pathname === '/home'
+  SwiperCore.use([Autoplay])
   return (
     <div
       style={{
@@ -26,10 +29,14 @@ function App() {
         <Header />
         <Nav />
         <div
-          style={{
-            maxWidth: '1080px',
-            margin: '0 auto',
-          }}
+          style={
+            isHome
+              ? {}
+              : {
+                  maxWidth: '1080px',
+                  margin: '0 auto',
+                }
+          }
         >
           {element}
         </div>
