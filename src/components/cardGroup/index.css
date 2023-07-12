@@ -1,0 +1,7 @@
+.cardGroup {
+    max-width: 1080px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
