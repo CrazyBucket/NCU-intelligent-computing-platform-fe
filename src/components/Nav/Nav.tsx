@@ -77,7 +77,7 @@ const Nav: FC = () => {
                         position: 'absolute',
                         top: '60px',
                         left: 0,
-                        zIndex: 1,
+                        zIndex: 100,
                       }}
                     >
                       {subTags[index].map((subTag, i) => (
