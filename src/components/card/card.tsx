@@ -3,14 +3,14 @@ import Vocter from '@/assets/vocter.svg'
 import './index.css'
 import { useNavigate } from 'react-router-dom'
 
-interface CardProps {
+interface CardType {
   icon: string
   title: string
   subTitle: string
   navigateTo: string
 }
 
-const Card: FC<CardProps> = ({ icon, title, subTitle, navigateTo }) => {
+const Card: FC<CardType> = ({ icon, title, subTitle, navigateTo }) => {
   const navigate = useNavigate()
   return (
     <div
