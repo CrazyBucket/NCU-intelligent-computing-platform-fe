@@ -1,0 +1,41 @@
+.QAGroup {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.QAItem {
+    border-radius: 15px;
+    background: #FFF;
+    margin-bottom: 40px;
+}
+
+.QABox {
+    margin-left: 64px;
+    margin-right: 64px;
+}
+
+.que {
+    color: #000;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 15px;
+    background: #EFF1F2;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+.ans {
+    color: #000;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 15px;
+    background: #EFF1F2;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 45px;
+    padding-right: 45px;
+}
