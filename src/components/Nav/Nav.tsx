@@ -14,7 +14,7 @@ const Nav: FC = () => {
     ['/Serve/applyAccount', '/Serve/userManual', '/Serve/problem', '/Serve/application'],
     [],
     ['/Login/VPN', '/Login/help', '/Login/Approval'],
-    ['./business/onCampus', './business/enterprise', './business/consult'],
+    ['/business/onCampus', '/business/enterprise', '/business/consult'],
   ]
   const subTags = [
     [],
