@@ -1,5 +1,4 @@
 import { FC } from 'react'
-import jifang from '@/assets/jifang.png'
 import './index.css'
 
 const Introduction: FC = () => {
@@ -35,7 +34,8 @@ const Introduction: FC = () => {
         </p>
       </div>
       <div className="imgWarp">
-        <img src={jifang} width="500" />
+        <img src="/img/home7.jpg" width="500" style={{ margin: '20px', paddingBottom: '50px' }} />
+        <img src="/img/home8.png" width="500" style={{ margin: '20px' }} />
       </div>
     </div>
   )

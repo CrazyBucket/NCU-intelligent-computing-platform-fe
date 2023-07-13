@@ -173,6 +173,7 @@ const Home: FC = () => {
               <div>
                 平台有管理登录节点、CPU节点、GPU节点和存储节点，共有2184个核心，能够处理大量并行计算任务，为科研和计算需求提供支持。
               </div>
+              <div className="homeLink">点击查看完整信息</div>
             </div>
           </div>
         </div>
@@ -196,6 +197,7 @@ const Home: FC = () => {
               <div>
                 • 集群总共核心数：2184，可同时处理大量并行计算任务，满足南昌大学的科研和计算需求。
               </div>
+              <div className="homeLink">点击查看完整信息</div>
             </div>
           </div>
           <div ref={frame2Ref} className="fromRight">

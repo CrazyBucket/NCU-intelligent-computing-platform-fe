@@ -76,3 +76,9 @@
 .homePanel {
     margin: 50px;
 }
+.homeLink {
+    text-align: right;
+    color: #367AFF;
+    text-decoration: underline;
+    padding-top: 30px;
+}
