@@ -78,7 +78,7 @@ const Resource: FC = () => {
   return (
     <div>
       <div style={{ fontWeight: 'bold', fontSize: 18, marginBottom: 10, marginTop: '50px' }}>
-        中心资源
+        平台资源
       </div>
       <Table dataSource={dataSource} columns={columns} pagination={false} bordered />
     </div>
