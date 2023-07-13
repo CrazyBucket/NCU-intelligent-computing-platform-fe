@@ -1,3 +1,10 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-indent: 2em;
+}
 .swiper-container {
     width: 100%;
     height: 500px;
@@ -9,7 +16,7 @@
 .item {
     width: 100%;
     height: 500px;
-        object-fit: cover;
+    object-fit: cover;
         z-index: 0;
 }
 
@@ -26,3 +33,46 @@
     z-index: 0;
 }
 
+.frame {
+    object-fit: cover;
+    margin: 50px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #ffffff;
+    box-shadow: 1px 1px 5px 1px #CCCCCC;
+}
+
+.section {
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 250px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+.homeTitle {
+    color: #000;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.homeText {
+    max-width: 500px;
+    color: #000;
+    font-family: PingFang SC;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.homePanel {
+    margin: 50px;
+}

@@ -26,8 +26,12 @@ function App() {
           paddingBottom: '40px',
         }}
       >
-        <Header />
-        <Nav />
+        {!isHome && (
+          <>
+            <Header />
+            <Nav />
+          </>
+        )}
         <div
           style={
             isHome
