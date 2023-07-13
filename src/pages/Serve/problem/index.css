@@ -11,6 +11,10 @@
     margin-bottom: 40px;
 }
 
+.QAItem:hover {
+    transition: filter 0.5s ease-in-out;
+    filter: drop-shadow(0px 3.380819082260132px 11.525781631469727px rgba(0, 0, 0, 0.09)) drop-shadow(0px 27px 104px rgba(0, 0, 0, 0.05));
+}
 .QABox {
     margin-left: 64px;
     margin-right: 64px;
