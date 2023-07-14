@@ -3,6 +3,7 @@ import axios from 'axios'
 import QA from '@/assets/QA.svg'
 import { AnimatePresence, motion } from 'framer-motion'
 import './index.css'
+import MoudleTitle from '@/components/moudleTitle/moudleTitle'
 
 interface qaType {
   id: number
@@ -47,10 +48,7 @@ const Problem: FC = () => {
 
   return (
     <div>
-      <div className="moduleTitle">
-        <img src={QA} style={{ paddingLeft: '15px', height: '35px' }} />
-        <span style={{ padding: '15px' }}>常见问题</span>
-      </div>
+      <MoudleTitle title="常见问题" icon={QA} />
       <AnimatePresence>
         <motion.div
           className="QAGroup"

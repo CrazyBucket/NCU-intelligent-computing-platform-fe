@@ -1,11 +1,10 @@
 import { FC } from 'react'
 import New from '@/assets/new.svg'
-import { useNavigate } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
 import './index.css'
+import MoudleTitle from '@/components/moudleTitle/moudleTitle'
 
 const News: FC = () => {
-  const navigate = useNavigate()
   const news = [
     {
       content: '南昌大学信息工程学院学生开源创客协会换届大会',
@@ -26,10 +25,7 @@ const News: FC = () => {
 
   return (
     <div>
-      <div className="moduleTitle">
-        <img src={New} style={{ paddingLeft: '15px' }} />
-        <span style={{ padding: '15px' }}>新闻公告</span>
-      </div>
+      <MoudleTitle title="新闻公告" icon={New} />
       <AnimatePresence>
         <motion.div
           className="newsGroup"
