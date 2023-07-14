@@ -1,21 +1,26 @@
 import { FC } from 'react'
 import New from '@/assets/new.svg'
+import { useNavigate } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
 import './index.css'
 
 const News: FC = () => {
+  const navigate = useNavigate()
   const news = [
     {
-      content: '南昌大学智算平台正式上线啦！欢迎大家使用。',
-      time: '2023-07-10',
+      content: '南昌大学信息工程学院学生开源创客协会换届大会',
+      time: '2023-06-25',
+      link: '/news/2',
     },
     {
-      content: '智算平台新增校外用户申请开通超算中心VPN功能。',
-      time: '2023-07-08',
+      content: '江西信息通信科技服务站协助承办科大讯飞进校园技术科普讲动',
+      time: '2023-06-05',
+      link: '/news/1',
     },
     {
-      content: '最新的用户手册已发布，点击查看详细信息啊',
-      time: '2023-07-05',
+      content: '主题教育｜信息工程学院学生开源创客协会成立大会成功召开',
+      time: '2023-06-04',
+      link: 'https://mp.weixin.qq.com/s/BfMSCL-CyLgFuWMYCEXfeg',
     },
   ]
 
@@ -33,7 +38,13 @@ const News: FC = () => {
           transition={{ duration: 0.5 }}
         >
           {news.map((item, index) => (
-            <div key={index} className="newsItem">
+            <div
+              key={index}
+              className="newsItem"
+              onClick={() => {
+                window.open(item.link, '_blank')
+              }}
+            >
               <div className="newsText">{item.content}</div>
               <div className="newsTime">{item.time}</div>
             </div>

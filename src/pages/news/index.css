@@ -60,3 +60,11 @@
 .newsText:hover {
     text-decoration: underline;
 }
+.newsPage {
+    padding: 30px 20px 60px;
+}
+
+.newsPage img {
+    padding: 20px;
+    margin: 0 auto;
+}
