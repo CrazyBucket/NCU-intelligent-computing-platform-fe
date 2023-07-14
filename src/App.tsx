@@ -1,6 +1,7 @@
 import routes from '@/routes/routes'
 import { useRoutes, useLocation } from 'react-router-dom'
 import SwiperCore, { Autoplay } from 'swiper'
+import { Toaster } from 'react-hot-toast'
 import Header from './components/Header/Header'
 import Nav from './components/Nav/Nav'
 import Footer from './components/footer/footer'
@@ -19,6 +20,7 @@ function App() {
         flexDirection: 'column',
       }}
     >
+      <Toaster />
       <div
         style={{
           flexGrow: 1,
