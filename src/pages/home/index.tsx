@@ -157,12 +157,7 @@ const Home: FC = () => {
           }}
         >
           <div ref={frame1Ref} className="fromLeft">
-            <img
-              src="../../../public/img/home6.jpg"
-              alt=""
-              className="frame"
-              style={{ height: '400px' }}
-            />
+            <img src="/img/home6.jpg" alt="" className="frame" style={{ height: '400px' }} />
           </div>
           <div className="homePanel" ref={panel1Ref}>
             <div className="homeTitle">平台简介</div>
@@ -201,12 +196,7 @@ const Home: FC = () => {
             </div>
           </div>
           <div ref={frame2Ref} className="fromRight">
-            <img
-              src="../../../public/img/home5.jpg"
-              alt=""
-              className="frame"
-              style={{ height: '400px' }}
-            />
+            <img src="/img/home5.jpg" alt="" className="frame" style={{ height: '400px' }} />
           </div>
         </div>
       </div>
