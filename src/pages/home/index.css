@@ -56,6 +56,10 @@
     cursor: pointer;
 }
 
+.section:hover {
+    transition: filter 0.5s ease-in-out;
+    filter: drop-shadow(0px 3.380819082260132px 11.525781631469727px rgba(0, 0, 0, 0.09)) drop-shadow(0px 27px 104px rgba(0, 0, 0, 0.05));
+}
 .homeTitle {
     color: #000;
     font-size: 36px;
