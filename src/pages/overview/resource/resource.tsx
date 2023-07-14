@@ -76,7 +76,12 @@ const columns = [
 
 const Resource: FC = () => {
   return (
-    <div>
+    <div
+      style={{
+        margin: '20px',
+        userSelect: 'text',
+      }}
+    >
       <div style={{ fontWeight: 'bold', fontSize: 18, marginBottom: 10, marginTop: '50px' }}>
         平台资源
       </div>
