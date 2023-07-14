@@ -20,6 +20,8 @@ import OnCampus from '@/pages/business/onCampus/onCampus'
 import ContactUs from '@/pages/overview/ContactUs'
 import Help from '@/pages/Login/help/install'
 import Approval from '@/pages/Login/approval'
+import NewsPage1 from '@/pages/news/NewsPage/NewsPage1.'
+import NewsPage2 from '@/pages/news/NewsPage/NewsPage2.'
 
 //创建路由表
 const routes = [
@@ -66,6 +68,14 @@ const routes = [
   {
     path: '/news',
     element: <News />,
+  },
+  {
+    path: '/news/1',
+    element: <NewsPage1 />,
+  },
+  {
+    path: '/news/2',
+    element: <NewsPage2 />,
   },
   {
     path: '/Serve',
