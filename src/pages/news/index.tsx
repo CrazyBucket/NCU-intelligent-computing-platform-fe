@@ -3,8 +3,10 @@ import New from '@/assets/new.svg'
 import { AnimatePresence, motion } from 'framer-motion'
 import './index.css'
 import MoudleTitle from '@/components/moudleTitle/moudleTitle'
+import { useNavigate } from 'react-router-dom'
 
 const News: FC = () => {
+  const navigate = useNavigate()
   const news = [
     {
       content: '南昌大学信息工程学院学生开源创客协会换届大会',
@@ -37,8 +39,13 @@ const News: FC = () => {
             <div
               key={index}
               className="newsItem"
-              onClick={() => {
-                window.open(item.link, '_blank')
+              onClick={event => {
+                event.stopPropagation()
+                if (index === 2) {
+                  window.open(item.link)
+                } else {
+                  navigate(item.link)
+                }
               }}
             >
               <div className="newsText">{item.content}</div>
