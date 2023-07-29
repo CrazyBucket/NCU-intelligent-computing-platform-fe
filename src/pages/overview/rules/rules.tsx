@@ -12,7 +12,7 @@ const Rules: FC = () => {
       }}
     >
       <h1 style={{ textAlign: 'center', fontWeight: '700' }}>
-        南昌大学人工智能工业研究院智能运算平台管理办法
+        南昌大学人工智能工业研究院智算平台管理办法
       </h1>
       <h2>第一章 总则</h2>
       <p>
