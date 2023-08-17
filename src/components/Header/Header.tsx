@@ -1,11 +1,8 @@
 import { FC, useEffect, useState } from 'react'
 import Logo from '@/assets/logo.png'
 import './index.css'
-import BtnNav from '../btnNav'
-import { useIsMobileStore } from '@/store/isMobile'
 
 const Header: FC = () => {
-  const { isMobile } = useIsMobileStore()
   return (
     <header
       style={{
@@ -17,11 +14,6 @@ const Header: FC = () => {
         justifyContent: 'space-between',
       }}
     >
-      {isMobile && (
-        <div>
-          <BtnNav />
-        </div>
-      )}
       <div
         style={{
           flex: 1,
